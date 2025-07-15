@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Template
+metadata:
+  name: phase-template
+  title: Phase Template
+  description: A template for creating a new phase in the AI Developer Hub.
+spec:
+  owner: engineering@example.com
+  type: service
+  parameters:
+    - title: Phase Name
+      properties:
+        name:
+          title: Name
+          type: string
+          description: The name of the new phase.
+  steps:
+    - id: generate
+      name: Generate Phase
+      action: fetch:template
+      input:
+        url: ./phase
+        values:
+          name: ${{ parameters.name }}
+    - id: publish
+      name: Publish
+      action: publish:local
+      input:
+        repoUrl: .
+        repoPath: phases/${{ parameters.name }}

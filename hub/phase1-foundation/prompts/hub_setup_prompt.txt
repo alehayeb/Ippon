@@ -1,0 +1,1 @@
+Generate the necessary Docker and application configuration for a Backstage-based developer hub.

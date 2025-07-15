@@ -1,0 +1,8 @@
+{
+  "name": "llm-adapter-backend",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

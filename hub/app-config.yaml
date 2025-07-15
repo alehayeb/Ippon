@@ -1,0 +1,21 @@
+app:
+  title: AI Developer Hub
+  baseUrl: http://localhost:3000
+
+backend:
+  baseUrl: http://localhost:7007
+  listen: ':7007'
+
+techdocs:
+  builder: 'local'
+  generators:
+    techdocs: 'docker'
+  publisher:
+    type: 'local'
+
+catalog:
+  rules:
+    - allow: [Component, API, Group, User, Template, Location]
+  locations:
+    - type: file
+      target: ./catalog-info.yaml

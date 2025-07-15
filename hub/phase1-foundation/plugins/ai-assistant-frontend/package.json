@@ -1,0 +1,8 @@
+{
+  "name": "ai-assistant-frontend",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}

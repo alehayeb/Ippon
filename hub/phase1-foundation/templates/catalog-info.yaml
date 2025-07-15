@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ai-developer-hub
+  description: A centralized platform for building, deploying, and managing AI-powered applications.
+spec:
+  type: service
+  owner: engineering@example.com
+  lifecycle: experimental
